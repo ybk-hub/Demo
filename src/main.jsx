@@ -1,12 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './views/ReversoContext/Demo'
 import './index.css'
-import App from './views/VirtualList/Demo'
-import App1 from './views/ReversoContext/Demo'
-import Menu from './views/Menu/menu'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Menu />
-  </StrictMode>,
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 )
